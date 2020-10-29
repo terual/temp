@@ -29,9 +29,9 @@ The following components are part of the LMS ecosystem and are interoperable:
  
 Every LMS system comprises of a server, (multiple) player(s) and (multiple) controller(s).
 
-|                          | Server | Player | Controller |
-| :----------------------- | :----- | :----- | :--------- |
-| Logitech Media Server    | yes    |        |            |
-| Squeezebox Touch         | option | yes    | yes        |
-| Material Skin            |        |        | yes        |
-| iPeng (iOS app)          |        | option | yes        |
+|                                                                             | Server   | Player   | Controller |
+| :-------------------------------------------------------------------------- | :------- | :------- | :--------- |
+| [Logitech Media Server](https://github.com/Logitech/slimserver/)            | yes      |          |            |
+| [Squeezebox Touch](https://wiki.slimdevices.com/index.php/Squeezebox_Touch) | optional | yes      | yes        |
+| Material Skin                                                               |          |          | yes        |
+| iPeng (iOS app)                                                             |          | optional | yes        |
