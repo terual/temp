@@ -26,3 +26,10 @@ The following components are part of the LMS ecosystem and are interoperable:
  * Bryston BDP Pi
  * Musical Fidelity M6 Encore
  * iPeng
+ 
+Every system comprises of a server, a player and a controller.
+
+|          | Server | Player | Controller |
+| :------- | :----- | :----- | :--------- |
+| Logitech Media Server | x       |        |            |
+|          |        |        |            |
