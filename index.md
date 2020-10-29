@@ -3,8 +3,7 @@ layout: default
 title: Home
 ---
 
-LMS Community
-====
+# LMS Community
 
 Logitech Media Server is a fully open source server software to power a wide range of audio players. With the help of many plugins, Logitech Media Server can stream not only your local music collection, but content from many music services and internet radio stations to your players.
 
@@ -15,7 +14,7 @@ Altough Squeezeboxes started in 2000 with hard- and software developed by Slim D
 
 To get a functioning LMS system you need to have a server, a controller and music players.
 
-![Image](lms-community.svg)
+![](lms-community.svg)
 
 |                                                                             | Server   | Player   | Controller |
 | :-------------------------------------------------------------------------- | :------- | :------- | :--------- |
@@ -23,6 +22,25 @@ To get a functioning LMS system you need to have a server, a controller and musi
 | [Squeezebox Touch](https://wiki.slimdevices.com/index.php/Squeezebox_Touch) | optional | yes      | yes        |
 | Material Skin                                                               |          |          | yes        |
 | iPeng (iOS app)                                                             |          | optional | yes        |
+
+## Get started!
+
+### DIY project
+
+SqueezeAMP and Squeezelite-ESP32
+LMS on a NAS or piCorePlayer
+
+### Based on a Raspberry Pi
+
+piCorePlayer
+
+### Plug-and-play
+
+
+
+
+
+
 
 
  * Logitech Media Server
