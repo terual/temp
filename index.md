@@ -1,33 +1,15 @@
 ---
 layout: default
-title: Homez
+title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+Logitech Media Server
+====
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+Logitech Media Server (aka. LMS, fka. SlimServer, SqueezeCenter, SqueezeboxServer, SliMP3) is the server software that powers audio players from [Logitech](https://www.logi.com) (formerly known as SlimDevices), including [Squeezebox 3rd Generation, Squeezebox Boom, Squeezebox Receiver, Transporter, Squeezebox2, Squeezebox and SLIMP3](http://wiki.slimdevices.com/index.php/Squeezebox_Family_Overview), and many software emulators like [Squeezelite and SqueezePlay](https://sourceforge.net/projects/lmsclients/files/).
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+With the help of many plugins, Logitech Media Server can stream not only your local music collection, but content from many music services and internet radio stations to your players.
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+Logitech Media Server is written in Perl. It runs on pretty much any platform that Perl runs on, including Linux, Mac OSX, Solaris and Windows.
+
+## What is LMS-Community?
