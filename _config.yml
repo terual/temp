@@ -1,9 +1,1 @@
-#theme: jekyll-theme-cayman
-remote-theme: poole/hyde
-
-# Setup
-title:            LMS-Community
-tagline:          'Commuinity site for Logitech Media Server'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://edo.kerntijd.nl
-baseurl:          /
+theme: jekyll-theme-cayman
