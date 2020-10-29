@@ -33,3 +33,5 @@ Every LMS system comprises of a server, (multiple) player(s) and (multiple) cont
 | :----------------------- | :----- | :----- | :--------- |
 | Logitech Media Server    | yes    |        |            |
 | Squeezebox Touch         | option | yes    | yes        |
+| Material Skin            |        |        | yes        |
+| iPeng (iOS app)          |        | option | yes        |
