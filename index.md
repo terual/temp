@@ -29,6 +29,8 @@ The following components are part of the LMS ecosystem and are interoperable:
  
 Every LMS system comprises of a server, (multiple) player(s) and (multiple) controller(s).
 
+![Image](lms-community.svg)
+
 |                                                                             | Server   | Player   | Controller |
 | :-------------------------------------------------------------------------- | :------- | :------- | :--------- |
 | [Logitech Media Server](https://github.com/Logitech/slimserver/)            | yes      |          |            |
