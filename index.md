@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Home
 ---
 
 An h1 header
