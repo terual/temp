@@ -24,3 +24,5 @@ The following components are part of the LMS ecosystem and are interoperable:
  * SOtM sMS-200
  * microRendu
  * Bryston BDP Pi
+ * Musical Fidelity M6 Encore
+ * iPeng
