@@ -10,7 +10,20 @@ Logitech Media Server is a fully open source server software to power a wide ran
 
 Also your plugins can have their home on LMS-Community. If you want to host your plugin repository here, please contact ...
 
-The following components are part of the LMS ecosystem and are interoperable:
+## LMS Ecosystem
+Altough Squeezeboxes started in 2000 with hard- and software developed by Slim Devices, and later Logitech, nowadays a wide array of hardware and software solutions exist which make up the LMS ecosystem.
+
+To get a functioning LMS system you need to have a server, a controller and music players.
+
+![Image](lms-community.svg)
+
+|                                                                             | Server   | Player   | Controller |
+| :-------------------------------------------------------------------------- | :------- | :------- | :--------- |
+| [Logitech Media Server](https://github.com/Logitech/slimserver/)            | yes      |          |            |
+| [Squeezebox Touch](https://wiki.slimdevices.com/index.php/Squeezebox_Touch) | optional | yes      | yes        |
+| Material Skin                                                               |          |          | yes        |
+| iPeng (iOS app)                                                             |          | optional | yes        |
+
 
  * Logitech Media Server
  * Logitech Squeezebox audio players
@@ -26,14 +39,3 @@ The following components are part of the LMS ecosystem and are interoperable:
  * Bryston BDP Pi
  * Musical Fidelity M6 Encore
  * iPeng
- 
-Every LMS system comprises of a server, (multiple) player(s) and (multiple) controller(s).
-
-![Image](lms-community.svg)
-
-|                                                                             | Server   | Player   | Controller |
-| :-------------------------------------------------------------------------- | :------- | :------- | :--------- |
-| [Logitech Media Server](https://github.com/Logitech/slimserver/)            | yes      |          |            |
-| [Squeezebox Touch](https://wiki.slimdevices.com/index.php/Squeezebox_Touch) | optional | yes      | yes        |
-| Material Skin                                                               |          |          | yes        |
-| iPeng (iOS app)                                                             |          | optional | yes        |
