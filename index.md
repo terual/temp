@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Homez
 ---
 
 <div class="posts">
