@@ -1,3 +1,8 @@
+---
+layout: page
+title: About
+---
+
 An h1 header
 ============
 
