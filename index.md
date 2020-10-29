@@ -10,9 +10,9 @@ Logitech Media Server is a fully open source server software to power a wide ran
 Also your plugins can have their home on LMS-Community. If you want to host your plugin repository here, please contact ...
 
 ## LMS Ecosystem
-Altough Squeezeboxes started in 2000 with hard- and software developed by Slim Devices, and later Logitech, nowadays a wide array of hardware and software solutions exist which make up the LMS ecosystem.
+Although Squeezeboxes started in 2000 with hard- and software developed by Slim Devices, which became later Logitech, nowadays a wide array of hardware and software solutions exist which make up the LMS ecosystem.
 
-To get a functioning LMS system you need to have a server, a controller and music players.
+To get a functioning LMS system you need to have three components, namely (1) a server, (2) a controller and (3) one or more music players. These three components can also be supplied by one device, for instance a Raspberry Pi with a touch screen running piCorePlayer.
 
 ![](lms-community.svg)
 
