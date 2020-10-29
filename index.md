@@ -27,9 +27,9 @@ The following components are part of the LMS ecosystem and are interoperable:
  * Musical Fidelity M6 Encore
  * iPeng
  
-Every system comprises of a server, a player and a controller.
+Every LMS system comprises of a server, (multiple) player(s) and (multiple) controller(s).
 
-|          | Server | Player | Controller |
-| :------- | :----- | :----- | :--------- |
-| Logitech Media Server | x       |        |            |
-|          |        |        |            |
+|                          | Server | Player | Controller |
+| :----------------------- | :----- | :----- | :--------- |
+| Logitech Media Server    | yes    |        |            |
+| Squeezebox Touch         | option | yes    | yes        |
