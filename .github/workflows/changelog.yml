@@ -21,5 +21,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git commit -a -m "Release ${{ github.event.inputs.version }}"
+          git add -A
+          git commit -a -m "Update changelog from slimserver repo"
           git push
