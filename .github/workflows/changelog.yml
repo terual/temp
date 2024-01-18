@@ -1,0 +1,18 @@
+name: Get Changelog from LMS
+on:
+  push:
+    branches:
+      - master 
+      - main
+permissions:
+  contents: write
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: Logitech/slimserver
+          path: '.'
+          run: cp Changelog8.html .
