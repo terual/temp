@@ -11,8 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: Logitech/slimserver
-          path: '.'
-          run: cp Changelog8.html .
+          sparse-checkout: .
+          run: |
+            cp Changelog8.html ${{ github.workspace }}
+
+      - name: Commit changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -a -m "Release ${{ github.event.inputs.version }}"
+          git push
