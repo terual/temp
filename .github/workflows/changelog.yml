@@ -31,7 +31,7 @@ jobs:
       - name: Write generated markdown contents
         if: always()
         run: |
-          echo "${{ steps.html2markdown.outputs.markdown-content }}" > ${{ env.CHANGELOG_FILENAME }}.md
+          cat <<< "${{ steps.html2markdown.outputs.markdown-content }}" > ${{ env.CHANGELOG_FILENAME }}.md
 
       - name: Commit changes
         run: |
