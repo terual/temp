@@ -13,8 +13,6 @@ env:
 jobs:
   changelog:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -24,11 +22,10 @@ jobs:
           curl $CHANGELOG_SRC > $CHANGELOG_FILENAME.html
 
       - name: Convert HTML to Markdown
-        id: html2markdown
-        if: always()
         uses: rknj/html2markdown@v1.1.0
         with:
           html-file: ${{ env.CHANGELOG_FILENAME }}.html
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit changes
         run: |
