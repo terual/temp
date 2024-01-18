@@ -24,11 +24,11 @@ jobs:
       - name: Convert HTML to Markdown
         id: html2markdown
         if: always()
-        uses: rknj/html2markdown@v0.1.0
+        uses: rknj/html2markdown@v1.1.0
         with:
           html-file: ${{ env.CHANGELOG_FILENAME }}.html
 
-      - name: Show content of generated markdown file
+      - name: Copy generated markdown file
         if: always()
         run: |
           cp ${{ steps.html2markdown.outputs.markdown-file }} ${{ env.CHANGELOG_FILENAME }}.md
