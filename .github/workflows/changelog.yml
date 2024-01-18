@@ -10,13 +10,12 @@ jobs:
   changelog:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          repository: Logitech/slimserver
-          sparse-checkout: .
-          run: |
-            cp Changelog8.html ${{ github.workspace }}
+
+      - name: Copy files
+        run: |
+          curl https://raw.githubusercontent.com/Logitech/slimserver/HEAD/Changelog8.html > changelog-lms8.md
 
       - name: Commit changes
         run: |
