@@ -1,11 +1,15 @@
 name: Get Changelog from LMS
+
 on:
   push:
     branches:
       - master 
       - main
-permissions:
-  contents: write
+
+env:
+  CHANGELOG_SRC: https://raw.githubusercontent.com/Logitech/slimserver/HEAD/Changelog8.html
+  CHANGELOG_FILENAME: changelog-lms8
+  
 jobs:
   changelog:
     runs-on: ubuntu-latest
@@ -15,19 +19,19 @@ jobs:
 
       - name: Copy files
         run: |
-          curl https://raw.githubusercontent.com/Logitech/slimserver/HEAD/Changelog8.html > changelog-lms8.html
+          curl $CHANGELOG_SRC > $CHANGELOG_FILENAME.html
 
       - name: Convert HTML to Markdown
         id: html2markdown
         if: always()
         uses: rknj/html2markdown@v0.1.0
         with:
-          html-file: "changelog-lms8.html"
+          html-file: "$CHANGELOG_FILENAME.html"
 
       - name: Commit changes
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add changelog-lms8.md
+          git add $CHANGELOG_FILENAME.md
           git commit -a -m "Update changelog from slimserver repo"
           git push
