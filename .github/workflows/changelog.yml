@@ -23,6 +23,7 @@ jobs:
 
       - name: Get file and convert
         run: |
+          export PATH=${PATH}:`go env GOPATH`/bin
           html2md -i $CHANGELOG_SRC > $CHANGELOG_FILENAME
 
       - name: Commit changes
