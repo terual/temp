@@ -28,6 +28,11 @@ jobs:
         with:
           html-file: ${{ env.CHANGELOG_FILENAME }}.html
 
+      - name: Write generated markdown contents
+        if: always()
+        run: |
+          cat ${{ steps.html2markdown.outputs.markdown-file }} > ${{ env.CHANGELOG_FILENAME }}.md
+
       - name: Commit changes
         run: |
           git config user.name github-actions
